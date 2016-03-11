@@ -1,0 +1,12 @@
+body {
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+	margin-top: 20px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+}
