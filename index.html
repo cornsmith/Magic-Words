@@ -2,75 +2,48 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Magic 100 - Sight Words</title>
-  <meta name="description" content="Magic 100 sight words">
-  <meta name="author" content="">
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title>Magic 100 - Sight Words</title>
+	<meta name="description" content="Magic 100 sight words">
+	<meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Mobile Specific Metas
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Lato:400,300,600" rel="stylesheet" type="text/css">
+	<!-- FONT
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="//fonts.googleapis.com/css?family=Lato:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/style.css">
+	<!-- CSS
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/style.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-	
-    <div class="row">
-		<div class="one-third column">&nbsp;
-			<div class="square" onclick="toggleColour(this)" id="yellow" style="background: yellow"></div>
-			<div class="square" onclick="toggleColour(this)" id="blue"   style="background: blue"></div>
-			<div class="square" onclick="toggleColour(this)" id="red"    style="background: red"></div>			
-		</div>
-		<div class="one-third column" style="margin-top: 25%">
-			<button class="button-primary" id="word" onclick="changeWord()"></button>
-		</div>
-		<div class="one-third column">&nbsp;</div>
-    </div>
-  </div>
- 
-	<script src="js/words.js"></script> 
-	<script>
-		var words = [];
-		words = words.concat(wordsYellow);
-		words = words.concat(wordsBlue);
-		words = words.concat(wordsRed);
-		
-		function changeWord() {
-			var word = words[Math.floor(Math.random() * words.length)];
-			document.getElementById("word").innerHTML = word;
-			//document.getElementById("word").style.backgroundColor = "#"+((1<<24)*Math.random()|0).toString(16);
-		}
-		
-		function toggleColour(elem) {
-			var colour = elem.id;
-			if (elem.style.borderColor == "black") {
-				elem.style.borderColor = "white";
-			} else {
-				elem.style.borderColor = "black";
-			} 
-		}
-		changeWord()
-	</script> 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Primary Page Layout
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<div class="container">
+		<div class="square" onclick="toggleColour(this)" id="yellow" style="background: yellow"></div>
+		<div class="square" onclick="toggleColour(this)" id="blue"   style="background: blue"></div>
+		<div class="square" onclick="toggleColour(this)" id="red"    style="background: red"></div>
+	</div>
+	<div class="container">
+		<button class="button-primary word" id="word" onclick="changeWord()"></button>
+	</div>
+
+	<!-- Scripts
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="js/words.js"></script>
+
+	<!-- End Document
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
