@@ -46,6 +46,24 @@ var wordsets = {
 		"we  ",
 		"with",
 		"you "
+	],
+	"green": [
+		"big",
+		"can",
+		"did",
+		"get",
+		"has",
+		"him",
+		"new",
+		"now",
+		"off",
+		"old",
+		"our",
+		"out",
+		"see",
+		"she",
+		"two",
+		"who"
 	]
 };
 
