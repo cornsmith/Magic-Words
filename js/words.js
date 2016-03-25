@@ -1,89 +1,92 @@
-var wordsets = {
-	"yellow": [
-		"a   ",
-		"and ",
-		"be  ",
-		"I   ",
-		"in  ",
-		"is  ",
-		"it  ",
-		"of  ",
-		"that",
-		"the ",
-		"to  ",
-		"was "
-	],
-	"blue": [
-		"an",
-		"by",
-		"do",
-		"go",
-		"if",
-		"me",
-		"my",
-		"no",
-		"or",
-		"up"
-	],
-	"red": [
-		"all ",
-		"are ",
-		"as  ",
-		"at  ",
-		"but ",
-		"for ",
-		"had ",
-		"have",
-		"he  ",
-		"her ",
-		"his ",
-		"not ",
-		"on  ",
-		"one ",
-		"said",
-		"so  ",
-		"they",
-		"we  ",
-		"with",
-		"you "
-	],
-	"green": [
-		"big",
-		"can",
-		"did",
-		"get",
-		"has",
-		"him",
-		"new",
-		"now",
-		"off",
-		"old",
-		"our",
-		"out",
-		"see",
-		"she",
-		"two",
-		"who"
-	],
-	"orange": [
-		"back",
-		"been",
-		"came",
-		"down",
-		"from",
-		"into",
-		"just",
-		"like",
-		"made",
-		"much",
-		"over",
-		"them",
-		"this",
-		"well",
-		"went",
-		"when"
-	]
-};
+function setWordsets() {
+	// Coloured sets of words
+	return {
+		"yellow": [
+			"a   ",
+			"and ",
+			"be  ",
+			"I   ",
+			"in  ",
+			"is  ",
+			"it  ",
+			"of  ",
+			"that",
+			"the ",
+			"to  ",
+			"was "
+		],
+		"blue": [
+			"an",
+			"by",
+			"do",
+			"go",
+			"if",
+			"me",
+			"my",
+			"no",
+			"or",
+			"up"
+		],
+		"red": [
+			"all ",
+			"are ",
+			"as  ",
+			"at  ",
+			"but ",
+			"for ",
+			"had ",
+			"have",
+			"he  ",
+			"her ",
+			"his ",
+			"not ",
+			"on  ",
+			"one ",
+			"said",
+			"so  ",
+			"they",
+			"we  ",
+			"with",
+			"you "
+		],
+		"green": [
+			"big",
+			"can",
+			"did",
+			"get",
+			"has",
+			"him",
+			"new",
+			"now",
+			"off",
+			"old",
+			"our",
+			"out",
+			"see",
+			"she",
+			"two",
+			"who"
+		],
+		"orange": [
+			"back",
+			"been",
+			"came",
+			"down",
+			"from",
+			"into",
+			"just",
+			"like",
+			"made",
+			"much",
+			"over",
+			"them",
+			"this",
+			"well",
+			"went",
+			"when"
+		]
+	};
+}
 
 function shuffle(array) {
 	var counter = array.length;
@@ -132,12 +135,11 @@ function toggleColour(elem) {
 	elem.style.borderColor = "black";
 
 	// Initialise wordset
+	wordsets = setWordsets();
 	words = wordsets[elem.id];
 	shuffle(words);
 	changeWord();
 }
 
-var words = wordsets["yellow"];
-document.getElementById("yellow").style.borderColor = "black";
-shuffle(words);
-changeWord();
+var wordsets = setWordsets();
+toggleColour(document.getElementById("yellow"));
