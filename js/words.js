@@ -107,10 +107,10 @@ function shuffle(array) {
 
 function changeWord() {
 	// Pick random word
-	var word = words[Math.floor(Math.random() * words.length)];
+	//var word = words[Math.floor(Math.random() * words.length)];
 
 	// Get and pop last word
-	//var word = words.pop();
+	var word = words.pop();
 
 	// Smiley if finished
 	if (word) {
@@ -133,10 +133,11 @@ function toggleColour(elem) {
 
 	// Initialise wordset
 	words = wordsets[elem.id];
-	//shuffle(words);
+	shuffle(words);
 	changeWord();
 }
 
 var words = wordsets["yellow"];
 document.getElementById("yellow").style.borderColor = "black";
-changeWord()
+shuffle(words);
+changeWord();
