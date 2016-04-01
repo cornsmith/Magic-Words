@@ -84,6 +84,20 @@ function setWordsets() {
 			"well",
 			"went",
 			"when"
+		],
+		"indigo": [
+			"will",
+			"only",
+			"make",
+			"must",
+			"what",
+			"your",
+			"were",
+			"here",
+			"come",
+			"call",
+			"then",
+			"some"
 		]
 	};
 }
