@@ -98,7 +98,23 @@ function setWordsets() {
 			"call",
 			"then",
 			"some"
-		]
+		],
+        "violet": [
+            "about",
+            "before",
+            "could",
+            "first",
+            "little",
+            "look",
+            "more",
+            "other",
+            "right",
+            "their",
+            "there",
+            "want",
+            "where",
+            "which"
+        ]
 	};
 }
 
