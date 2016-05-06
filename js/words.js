@@ -114,7 +114,29 @@ function setWordsets() {
             "want",
             "where",
             "which"
-        ]
+        ],
+		"pink": [
+			"after",
+			"am",
+			"boy",
+			"day",
+			"eat",
+			"five",
+			"fly",
+			"girl",
+			"good",
+			"help",
+			"home",
+			"jump",
+			"play",
+			"ran",
+			"read",
+			"saw",
+			"sing",
+			"sit",
+			"think",
+			"us"
+		]
 	};
 }
 
