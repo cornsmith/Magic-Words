@@ -136,6 +136,28 @@ function setWordsets() {
 			"sit",
 			"think",
 			"us"
+		],
+		"purple": [
+			"again",
+			"ask",
+			"best",
+			"bring",
+			"far",
+			"find",
+			"give",
+			"how",
+			"kind",
+			"left",
+			"man",
+			"mother",
+			"own",
+			"room",
+			"say",
+			"step",
+			"these",
+			"too",
+			"walk",
+			"wish"
 		]
 	};
 }
