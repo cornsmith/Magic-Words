@@ -158,6 +158,28 @@ function setWordsets() {
 			"too",
 			"walk",
 			"wish"
+		],
+		"aqua": [
+			"always",
+			"away",
+			"bird",
+			"dog",
+			"fast",
+			"four",
+			"going",
+			"hand",
+			"keep",
+			"let",
+			"many",
+			"night",
+			"people",
+			"round",
+			"school",
+			"take",
+			"thing",
+			"tree",
+			"water",
+			"work"
 		]
 	};
 }
