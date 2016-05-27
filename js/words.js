@@ -180,6 +180,28 @@ function setWordsets() {
 			"tree",
 			"water",
 			"work"
+		],
+		"lime": [
+			"would",
+			"should",
+			"another",
+			"put",
+			"head",
+			"white",
+			"may",
+			"run",
+			"three",
+			"got",
+			"under",
+			"once",
+			"father",
+			"don't",
+			"found",
+			"tell",
+			"black",
+			"live",
+			"know",
+			"bad"
 		]
 	};
 }
