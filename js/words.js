@@ -202,6 +202,28 @@ function setWordsets() {
 			"live",
 			"know",
 			"bad"
+		],
+		"gold":[
+			"sat",
+			"morning",
+			"last",
+			"blue",
+			"because",
+			"any",
+			"why",
+			"very",
+			"time",
+			"year",
+			"red",
+			"house",
+			"than",
+			"soon",
+			"long",
+			"open",
+			"green",
+			"gave",
+			"fell",
+			"every"
 		]
 	};
 }
